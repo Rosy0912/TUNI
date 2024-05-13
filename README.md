@@ -1,4 +1,4 @@
-# TUNI:
+# TUNI
 The experimental code of paper "TUNI: Textual Unimodal Detector for Identity Inference in CLIP Models".
 
 ## Introduction
