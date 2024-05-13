@@ -55,7 +55,7 @@ class Autoencoder(nn.Module):
             nn.Linear(16, 8),
             nn.ReLU(),
             nn.Linear(8, 4),
-            nn.ReLU(),  # 编码到一个较小的维度
+            nn.ReLU(),
         )
         self.decoder = nn.Sequential(
             nn.Linear(4, 8),
@@ -63,7 +63,7 @@ class Autoencoder(nn.Module):
             nn.Linear(8, 16),
             nn.ReLU(),
             nn.Linear(16, input_size),
-            nn.Sigmoid(),  # 确保输出在0到1之间，如果数据已归一化
+            nn.Sigmoid(),
         )
 
     def forward(self, x):
@@ -98,7 +98,7 @@ with torch.no_grad():
     reconstructed = autoencoder(X_tensor_test)
     mse_loss = nn.functional.mse_loss(reconstructed, X_tensor_test, reduction='none').mean(dim=1)
     mse_loss_np = mse_loss.numpy()
-    threshold = np.quantile(mse_loss_np, 0.75)  # 设定阈值为第75百分位
+    threshold = np.quantile(mse_loss_np, 0.75)
     y_pred_ae = np.where(mse_loss_np > threshold, -1, 1)
 
 
