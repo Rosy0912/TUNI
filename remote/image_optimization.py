@@ -18,7 +18,7 @@ def get_random_image_path(image_dir):
     return os.path.join(image_dir, random.choice(images))
 
 def setup(rank, world_size):
-    os.environ['MASTER_ADDR'] = 'localhost'  # 修改为localhost，更加通用
+    os.environ['MASTER_ADDR'] = 'localhost'
     os.environ['MASTER_PORT'] = '12355'
     dist.init_process_group("nccl", rank=rank, world_size=world_size)
 
