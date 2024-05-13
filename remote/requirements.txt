@@ -1,1 +1,39 @@
-
+Brotli @ file:///croot/brotli-split_1714483155106/work
+certifi @ file:///croot/certifi_1707229174982/work/certifi
+chardet==5.2.0
+charset-normalizer @ file:///tmp/build/80754af9/charset-normalizer_1630003229654/work
+filelock==3.14.0
+fsspec==2024.3.1
+ftfy==6.2.0
+huggingface-hub==0.23.0
+idna @ file:///croot/idna_1714398848350/work
+joblib==1.4.2
+mkl-fft @ file:///croot/mkl_fft_1695058164594/work
+mkl-random @ file:///croot/mkl_random_1695059800811/work
+mkl-service==2.4.0
+numpy @ file:///croot/numpy_and_numpy_base_1708638617955/work/dist/numpy-1.26.4-cp310-cp310-linux_x86_64.whl#sha256=d8cd837ed43e87f77e6efaa08e8de927ca030a1c9c5d04624432d6fb9a74a5ee
+open-clip-torch==2.24.0
+packaging==24.0
+pandas==2.2.2
+pillow @ file:///croot/pillow_1714398848491/work
+protobuf==5.26.1
+PySocks @ file:///home/builder/ci_310/pysocks_1640793678128/work
+python-dateutil==2.9.0.post0
+pytz==2024.1
+PyYAML==6.0.1
+regex==2024.4.28
+requests @ file:///croot/requests_1707355572290/work
+safetensors==0.4.3
+scikit-learn==1.4.2
+scipy==1.13.0
+sentencepiece==0.2.0
+six==1.16.0
+threadpoolctl==3.5.0
+timm==0.9.16
+torch==1.12.1
+torchvision==0.13.1
+tqdm==4.66.4
+typing_extensions==4.11.0
+tzdata==2024.1
+urllib3 @ file:///croot/urllib3_1707770551213/work
+wcwidth==0.2.13
